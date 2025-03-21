@@ -21,9 +21,10 @@
  */
 
 #ifdef HAVE_CONFIG_H
-# include "config.h"
+#include "config.h"
 #endif
 
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -32,7 +33,6 @@
 #include "xalloc.h"
 
 extern void xalloc_die(void);
-
 
 /*
  * xmalloc()

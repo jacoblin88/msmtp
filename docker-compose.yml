@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  msmtp-fuzzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./outputs:/fuzzing/outputs
+    environment:
+      - AFL_SKIP_CPUFREQ=1
+      - AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp=unconfined
