@@ -50,9 +50,16 @@ RUN afl-clang-fast -o msmtp_fuzzer msmtp_fuzzer.c && \
 # Create directories for fuzzing inputs and outputs
 RUN mkdir -p /fuzzing/inputs /fuzzing/outputs
 
-# Create initial test cases
+# Copy the test case generation script
+COPY generate_testcases.sh /fuzzing/
+RUN chmod +x /fuzzing/generate_testcases.sh
+
+# Create basic initial test cases
 RUN echo "EHLO localhost\r\nMAIL FROM:<test@example.com>\r\nRCPT TO:<recipient@example.com>\r\nDATA\r\nSubject: Test\r\n\r\nThis is a test.\r\n.\r\nQUIT\r\n" > /fuzzing/inputs/smtp_commands.txt && \
     echo "334 VXNlcm5hbWU6\r\n235 Authentication successful\r\n" > /fuzzing/inputs/auth_response.txt
+
+# Generate additional test cases
+RUN /fuzzing/generate_testcases.sh
 
 # Create a script to run all fuzzers
 RUN echo '#!/bin/bash\n\
