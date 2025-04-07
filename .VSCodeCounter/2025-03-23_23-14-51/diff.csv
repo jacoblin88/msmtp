@@ -1,0 +1,17 @@
+"filename", "language", "Shell Script", "C", "Docker", "Properties", "YAML", "comment", "blank", "total"
+"/home/alex/AI_FUZZ/msmtp/Dockerfile", "Docker", 0, 0, 91, 0, 0, 24, 14, 129
+"/home/alex/AI_FUZZ/msmtp/auth_fuzzer.c", "C", 0, 103, 0, 0, 0, 23, 24, 150
+"/home/alex/AI_FUZZ/msmtp/docker-compose.yml", "YAML", 0, 0, 0, 0, 15, 0, 2, 17
+"/home/alex/AI_FUZZ/msmtp/generate_testcases.sh", "Shell Script", 30, 0, 0, 0, 0, 37, 31, 98
+"/home/alex/AI_FUZZ/msmtp/msmtp_fuzzer.c", "C", 0, 95, 0, 0, 0, 20, 21, 136
+"/home/alex/AI_FUZZ/msmtp/msmtpd_fuzzer.c", "C", 0, 75, 0, 0, 0, 18, 19, 112
+"/home/alex/AI_FUZZ/msmtp/scripts/find_alias/find_alias_for_msmtp.sh", "Shell Script", 34, 0, 0, 0, 0, 17, 13, 64
+"/home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-enqueue.sh", "Shell Script", 20, 0, 0, 0, 0, 16, 9, 45
+"/home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-listqueue.sh", "Shell Script", 5, 0, 0, 0, 0, 1, 3, 9
+"/home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-runqueue.sh", "Shell Script", 51, 0, 0, 0, 0, 8, 11, 70
+"/home/alex/AI_FUZZ/msmtp/scripts/set_sendmail/set_sendmail.conf", "Properties", 0, 0, 0, 21, 0, 40, 14, 75
+"/home/alex/AI_FUZZ/msmtp/scripts/set_sendmail/set_sendmail.sh", "Shell Script", 121, 0, 0, 0, 0, 32, 33, 186
+"/home/alex/AI_FUZZ/msmtp/tests/test-auth-plain.sh", "Shell Script", 14, 0, 0, 0, 0, 4, 6, 24
+"/home/alex/AI_FUZZ/msmtp/tests/test-basic.sh", "Shell Script", 3, 0, 0, 0, 0, 2, 3, 8
+"/home/alex/AI_FUZZ/msmtp/tests/test-header-handling.sh", "Shell Script", 69, 0, 0, 0, 0, 10, 11, 90
+"Total", "-", 347, 273, 91, 21, 15, 252, 214, 1213

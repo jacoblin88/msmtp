@@ -1,0 +1,49 @@
+Date : 2025-03-23 23:14:51
+Directory : /home/alex/AI_FUZZ/msmtp
+Total : 15 files,  747 codes, 252 comments, 214 blanks, all 1213 lines
+
+Languages
++--------------+------------+------------+------------+------------+------------+
+| language     | files      | code       | comment    | blank      | total      |
++--------------+------------+------------+------------+------------+------------+
+| Shell Script |          9 |        347 |        127 |        120 |        594 |
+| C            |          3 |        273 |         61 |         64 |        398 |
+| Docker       |          1 |         91 |         24 |         14 |        129 |
+| Properties   |          1 |         21 |         40 |         14 |         75 |
+| YAML         |          1 |         15 |          0 |          2 |         17 |
++--------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                   |         15 |        747 |        252 |        214 |      1,213 |
+| . (Files)                                                           |          6 |        409 |        122 |        111 |        642 |
+| scripts                                                             |          6 |        252 |        114 |         83 |        449 |
+| scripts/find_alias                                                  |          1 |         34 |         17 |         13 |         64 |
+| scripts/msmtpqueue                                                  |          3 |         76 |         25 |         23 |        124 |
+| scripts/set_sendmail                                                |          2 |        142 |         72 |         47 |        261 |
+| tests                                                               |          3 |         86 |         16 |         20 |        122 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| filename                                                            | language     | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| /home/alex/AI_FUZZ/msmtp/Dockerfile                                 | Docker       |         91 |         24 |         14 |        129 |
+| /home/alex/AI_FUZZ/msmtp/auth_fuzzer.c                              | C            |        103 |         23 |         24 |        150 |
+| /home/alex/AI_FUZZ/msmtp/docker-compose.yml                         | YAML         |         15 |          0 |          2 |         17 |
+| /home/alex/AI_FUZZ/msmtp/generate_testcases.sh                      | Shell Script |         30 |         37 |         31 |         98 |
+| /home/alex/AI_FUZZ/msmtp/msmtp_fuzzer.c                             | C            |         95 |         20 |         21 |        136 |
+| /home/alex/AI_FUZZ/msmtp/msmtpd_fuzzer.c                            | C            |         75 |         18 |         19 |        112 |
+| /home/alex/AI_FUZZ/msmtp/scripts/find_alias/find_alias_for_msmtp.sh | Shell Script |         34 |         17 |         13 |         64 |
+| /home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-enqueue.sh        | Shell Script |         20 |         16 |          9 |         45 |
+| /home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-listqueue.sh      | Shell Script |          5 |          1 |          3 |          9 |
+| /home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-runqueue.sh       | Shell Script |         51 |          8 |         11 |         70 |
+| /home/alex/AI_FUZZ/msmtp/scripts/set_sendmail/set_sendmail.conf     | Properties   |         21 |         40 |         14 |         75 |
+| /home/alex/AI_FUZZ/msmtp/scripts/set_sendmail/set_sendmail.sh       | Shell Script |        121 |         32 |         33 |        186 |
+| /home/alex/AI_FUZZ/msmtp/tests/test-auth-plain.sh                   | Shell Script |         14 |          4 |          6 |         24 |
+| /home/alex/AI_FUZZ/msmtp/tests/test-basic.sh                        | Shell Script |          3 |          2 |          3 |          8 |
+| /home/alex/AI_FUZZ/msmtp/tests/test-header-handling.sh              | Shell Script |         69 |         10 |         11 |         90 |
+| Total                                                               |              |        747 |        252 |        214 |      1,213 |
++---------------------------------------------------------------------+--------------+------------+------------+------------+------------+

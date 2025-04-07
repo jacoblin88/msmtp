@@ -1,0 +1,91 @@
+Date : 2025-03-23 23:14:51
+Directory : /home/alex/AI_FUZZ/msmtp
+Total : 55 files,  15110 codes, 3751 comments, 1920 blanks, all 20781 lines
+
+Languages
++--------------+------------+------------+------------+------------+------------+
+| language     | files      | code       | comment    | blank      | total      |
++--------------+------------+------------+------------+------------+------------+
+| C            |         25 |     13,847 |      2,243 |      1,509 |     17,599 |
+| C++          |         18 |        789 |      1,317 |        261 |      2,367 |
+| Shell Script |          9 |        347 |        127 |        120 |        594 |
+| Docker       |          1 |         91 |         24 |         14 |        129 |
+| Properties   |          1 |         21 |         40 |         14 |         75 |
+| YAML         |          1 |         15 |          0 |          2 |         17 |
++--------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                   |         55 |     15,110 |      3,751 |      1,920 |     20,781 |
+| . (Files)                                                           |          6 |        409 |        122 |        111 |        642 |
+| scripts                                                             |          6 |        252 |        114 |         83 |        449 |
+| scripts/find_alias                                                  |          1 |         34 |         17 |         13 |         64 |
+| scripts/msmtpqueue                                                  |          3 |         76 |         25 |         23 |        124 |
+| scripts/set_sendmail                                                |          2 |        142 |         72 |         47 |        261 |
+| src                                                                 |         40 |     14,363 |      3,499 |      1,706 |     19,568 |
+| tests                                                               |          3 |         86 |         16 |         20 |        122 |
++---------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| filename                                                            | language     | code       | comment    | blank      | total      |
++---------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| /home/alex/AI_FUZZ/msmtp/Dockerfile                                 | Docker       |         91 |         24 |         14 |        129 |
+| /home/alex/AI_FUZZ/msmtp/auth_fuzzer.c                              | C            |        103 |         23 |         24 |        150 |
+| /home/alex/AI_FUZZ/msmtp/docker-compose.yml                         | YAML         |         15 |          0 |          2 |         17 |
+| /home/alex/AI_FUZZ/msmtp/generate_testcases.sh                      | Shell Script |         30 |         37 |         31 |         98 |
+| /home/alex/AI_FUZZ/msmtp/msmtp_fuzzer.c                             | C            |         95 |         20 |         21 |        136 |
+| /home/alex/AI_FUZZ/msmtp/msmtpd_fuzzer.c                            | C            |         75 |         18 |         19 |        112 |
+| /home/alex/AI_FUZZ/msmtp/scripts/find_alias/find_alias_for_msmtp.sh | Shell Script |         34 |         17 |         13 |         64 |
+| /home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-enqueue.sh        | Shell Script |         20 |         16 |          9 |         45 |
+| /home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-listqueue.sh      | Shell Script |          5 |          1 |          3 |          9 |
+| /home/alex/AI_FUZZ/msmtp/scripts/msmtpqueue/msmtp-runqueue.sh       | Shell Script |         51 |          8 |         11 |         70 |
+| /home/alex/AI_FUZZ/msmtp/scripts/set_sendmail/set_sendmail.conf     | Properties   |         21 |         40 |         14 |         75 |
+| /home/alex/AI_FUZZ/msmtp/scripts/set_sendmail/set_sendmail.sh       | Shell Script |        121 |         32 |         33 |        186 |
+| /home/alex/AI_FUZZ/msmtp/src/aliases.c                              | C            |        224 |         33 |         48 |        305 |
+| /home/alex/AI_FUZZ/msmtp/src/aliases.h                              | C++          |         10 |         35 |          6 |         51 |
+| /home/alex/AI_FUZZ/msmtp/src/base64.c                               | C            |        399 |        147 |         60 |        606 |
+| /home/alex/AI_FUZZ/msmtp/src/base64.h                               | C++          |         32 |         20 |         17 |         69 |
+| /home/alex/AI_FUZZ/msmtp/src/conf.c                                 | C            |      1,939 |        178 |        114 |      2,231 |
+| /home/alex/AI_FUZZ/msmtp/src/conf.h                                 | C++          |        121 |        170 |         27 |        318 |
+| /home/alex/AI_FUZZ/msmtp/src/eval.c                                 | C            |         60 |         26 |         13 |         99 |
+| /home/alex/AI_FUZZ/msmtp/src/eval.h                                 | C++          |          4 |         27 |          4 |         35 |
+| /home/alex/AI_FUZZ/msmtp/src/gettext.h                              | C++          |        218 |         58 |         26 |        302 |
+| /home/alex/AI_FUZZ/msmtp/src/list.c                                 | C            |         75 |         45 |         34 |        154 |
+| /home/alex/AI_FUZZ/msmtp/src/list.h                                 | C++          |         16 |         59 |         16 |         91 |
+| /home/alex/AI_FUZZ/msmtp/src/md5-apps.c                             | C            |         57 |         22 |         15 |         94 |
+| /home/alex/AI_FUZZ/msmtp/src/md5-apps.h                             | C++          |          8 |         34 |          6 |         48 |
+| /home/alex/AI_FUZZ/msmtp/src/md5.c                                  | C            |        182 |         69 |         41 |        292 |
+| /home/alex/AI_FUZZ/msmtp/src/md5.h                                  | C++          |         21 |         27 |          7 |         55 |
+| /home/alex/AI_FUZZ/msmtp/src/msgid.c                                | C            |         60 |         27 |          9 |         96 |
+| /home/alex/AI_FUZZ/msmtp/src/msgid.h                                | C++          |          4 |         31 |          4 |         39 |
+| /home/alex/AI_FUZZ/msmtp/src/msmtp.c                                | C            |      3,793 |        361 |        266 |      4,420 |
+| /home/alex/AI_FUZZ/msmtp/src/msmtpd.c                               | C            |        804 |         82 |         48 |        934 |
+| /home/alex/AI_FUZZ/msmtp/src/mtls-gnutls.c                          | C            |        595 |         98 |         60 |        753 |
+| /home/alex/AI_FUZZ/msmtp/src/mtls-libtls.c                          | C            |        419 |         81 |         74 |        574 |
+| /home/alex/AI_FUZZ/msmtp/src/mtls-openssl.c                         | C            |        769 |        163 |         91 |      1,023 |
+| /home/alex/AI_FUZZ/msmtp/src/mtls.c                                 | C            |        148 |         55 |         34 |        237 |
+| /home/alex/AI_FUZZ/msmtp/src/mtls.h                                 | C++          |         63 |        165 |         29 |        257 |
+| /home/alex/AI_FUZZ/msmtp/src/net.c                                  | C            |        955 |        131 |        118 |      1,204 |
+| /home/alex/AI_FUZZ/msmtp/src/net.h                                  | C++          |         32 |        122 |         17 |        171 |
+| /home/alex/AI_FUZZ/msmtp/src/netrc.c                                | C            |        296 |         57 |         72 |        425 |
+| /home/alex/AI_FUZZ/msmtp/src/netrc.h                                | C++          |         29 |         15 |         12 |         56 |
+| /home/alex/AI_FUZZ/msmtp/src/password.c                             | C            |        178 |         32 |         16 |        226 |
+| /home/alex/AI_FUZZ/msmtp/src/password.h                             | C++          |         11 |         32 |          5 |         48 |
+| /home/alex/AI_FUZZ/msmtp/src/readbuf.c                              | C            |         13 |         31 |         10 |         54 |
+| /home/alex/AI_FUZZ/msmtp/src/readbuf.h                              | C++          |         11 |         31 |          6 |         48 |
+| /home/alex/AI_FUZZ/msmtp/src/smtp.c                                 | C            |      1,781 |        310 |        166 |      2,257 |
+| /home/alex/AI_FUZZ/msmtp/src/smtp.h                                 | C++          |        120 |        255 |         35 |        410 |
+| /home/alex/AI_FUZZ/msmtp/src/stream.c                               | C            |         40 |         26 |         10 |         76 |
+| /home/alex/AI_FUZZ/msmtp/src/stream.h                               | C++          |          7 |         37 |          7 |         51 |
+| /home/alex/AI_FUZZ/msmtp/src/tools.c                                | C            |        694 |        165 |        121 |        980 |
+| /home/alex/AI_FUZZ/msmtp/src/tools.h                                | C++          |         68 |        173 |         30 |        271 |
+| /home/alex/AI_FUZZ/msmtp/src/xalloc.c                               | C            |         93 |         43 |         25 |        161 |
+| /home/alex/AI_FUZZ/msmtp/src/xalloc.h                               | C++          |         14 |         26 |          7 |         47 |
+| /home/alex/AI_FUZZ/msmtp/tests/test-auth-plain.sh                   | Shell Script |         14 |          4 |          6 |         24 |
+| /home/alex/AI_FUZZ/msmtp/tests/test-basic.sh                        | Shell Script |          3 |          2 |          3 |          8 |
+| /home/alex/AI_FUZZ/msmtp/tests/test-header-handling.sh              | Shell Script |         69 |         10 |         11 |         90 |
+| Total                                                               |              |     15,110 |      3,751 |      1,920 |     20,781 |
++---------------------------------------------------------------------+--------------+------------+------------+------------+------------+
